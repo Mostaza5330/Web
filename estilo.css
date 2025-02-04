@@ -1,0 +1,44 @@
+/* Definir variables para colores y estilos principales */
+:root {
+    --color-primario: #00407A;  /* Azul oscuro */
+    --color-texto: #333;        /* Texto en gris oscuro */
+    --fondo: #f8f9fa;           /* Fondo claro */
+    --fondo-seccion: white;     /* Fondo de secciones */
+    --transition: all 0.2s ease; /* Transición suave */
+}
+/* Reset básico para eliminar márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: var(--transition); /* Transiciones en todos los elementos */
+}
+/* Contenedor principal para centrar contenido */
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    padding: 20px;
+}
+/* Estilo del encabezado */
+header {
+    background-color: var(--color-primario);
+    color: white;
+    padding: 60px 0 40px;
+    position: relative; /* Para posicionar el interruptor */
+}
+/* Estilo general de las secciones */
+.seccion {
+    background-color: var(--fondo-seccion);
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra ligera */
+}
+
+/* Títulos de las secciones */
+h2 {
+    color: var(--color-primario);
+    border-bottom: 2px solid var(--color-primario);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
